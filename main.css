@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  background-color: #6e57e0;
+}
+
+.container {
+  margin: 30px;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: #6e57e0;
+}
+
+.items {
+  width: 550px;
+  height: 50px;
+
+  margin-top: 3rem;
+  border: 1px solid black;
+  border-radius: 50px;
+  background-image: linear-gradient(to bottom right, #663399, #708090);
+  color: #fff5ee;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 2px 2px 1px black;
+}
+
+.amime:hover {
+  transition-duration: 500ms;
+  transform: scale(1.1);
+}
+
+.Heading {
+  color: #fff5ee;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  text-shadow: 2px 2px 1px black;
+
+  animation-name: tild;
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+
+  line-height: 1.5;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+
+  /* animation-name: under;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite; */
+}
+
+@keyframes tild {
+  50% {
+    transform: skewX(10deg);
+  }
+
+  100% {
+    transform: skewX(-10deg);
+  }
+}
+
+/* @keyframes under {
+  50% {
+    text-decoration: underline;
+    color: black;
+  }
+  100% {
+    text-decoration: none;
+  }
+} */
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  .items {
+    width: 350px;
+  }
+
+  .Heading {
+    font-size: 19px;
+    line-height: 2.5;
+  }
+}
